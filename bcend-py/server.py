@@ -1,7 +1,11 @@
+import os
 from flask import Flask, request, jsonify
 import joblib
 
 app = Flask(__name__)
+
+from flask_cors import CORS
+CORS(app)
 
 # Load the saved model and vectorizer
 model = joblib.load("model/spam_model.joblib")
@@ -23,5 +27,8 @@ def analyze_text():
         "confidence": round(prob, 2)
     })
 
+
+
 if __name__ == "__main__":
-    app.run(port=5000)
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host="0.0.0.0", port=port)
