@@ -53,32 +53,33 @@ Phishing-detect-app/
 ### 1️⃣ Clone the repository
 
 git clone https://github.com/BasmaSalim2005/phishing-detect-app.git
+
 cd phishing-detect-app
 
-#2️⃣ Create and activate a virtual environment
+### 2️⃣ Create and activate a virtual environment
 
 python -m venv venv
 .\venv\Scripts\activate      # on Windows
 or
 source venv/bin/activate     # on macOS/Linux
 
-#3️⃣ Install dependencies
+### 3️⃣ Install dependencies
 
 pip install -r requirements.txt
 
-#4️⃣ Train the model (optional)
+### 4️⃣ Train the model (optional)
 
 If you want to retrain the model:
 python train_model.py
 
-#5️⃣ Run the Flask model API
+### 5️⃣ Run the Flask model API
 
 python server.py
 → runs on http://127.0.0.1:5000/analyze
 
-6️⃣ Run the FastAPI backend
+### 6️⃣ Run the FastAPI backend
 uvicorn bcend:app --reload --port 8000
 → runs on http://127.0.0.1:8000/analyze_full
 
-7️⃣ Open the Frontend
+### 7️⃣ Open the Frontend
 Open index.html in your browser and test any text message.
