@@ -16,8 +16,7 @@ app.add_middleware(
 )
 
 # Configure Gemini API
-genai.configure(api_key="AIzaSyD9OVS0FF3B8V__6XDI0BeayM3URb_iY6g")  # replace with your actual key
-
+genai.configure(api_key="AIzaSyD9OVS0FF3B8V__6XDI0BeayM3URb_iY6g") 
 MODEL_API_URL = "http://127.0.0.1:5000/analyze"  # Flask model
 
 @app.post("/analyze_full")
