@@ -50,7 +50,7 @@ Phishing-detect-app/
 
 ## ⚙️ Installation & Setup
 
-# 1️⃣ Clone the repository
+### 1️⃣ Clone the repository
 
 git clone https://github.com/BasmaSalim2005/phishing-detect-app.git
 cd phishing-detect-app
