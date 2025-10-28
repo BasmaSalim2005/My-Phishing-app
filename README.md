@@ -59,8 +59,11 @@ cd phishing-detect-app
 ### 2️⃣ Create and activate a virtual environment
 
 python -m venv venv
+
 .\venv\Scripts\activate      # on Windows
+
 or
+
 source venv/bin/activate     # on macOS/Linux
 
 ### 3️⃣ Install dependencies
